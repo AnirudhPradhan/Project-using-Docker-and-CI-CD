@@ -4,7 +4,7 @@ workdir /app
 
 copy . .
 
-run requirements.txt
+run pip install -r requirements.txt
 
 expose 5000
 
