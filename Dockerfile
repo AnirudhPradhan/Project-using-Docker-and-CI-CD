@@ -2,7 +2,7 @@ from python:3.8-alpine
 
 copy . /app
 
-workdir . .
+workdir /app
 
 run pip install -r requirements.txt
 
