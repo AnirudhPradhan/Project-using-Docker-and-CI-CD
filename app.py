@@ -1,10 +1,11 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return "Hey! How are you doing?"
+def hello_world():
+    return 'Hello, World!'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0', port=5000)
